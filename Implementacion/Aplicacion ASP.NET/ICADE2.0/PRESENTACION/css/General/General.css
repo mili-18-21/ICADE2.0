@@ -1,0 +1,108 @@
+﻿.hiddencol { display: none; }
+        .imgw
+        {
+            width:20px;
+        }
+/**MenuHead**/
+body
+{
+    background:#FFFFFF url(/Imagenes/MenuHead/bg.png) no-repeat top left;
+    font-family:Arial;
+}
+span.reference
+{
+    position:fixed;
+            left:10px;
+            bottom:10px;
+            font-size:12px;
+        }
+        span.reference a
+        {
+            color:#aaa;
+            text-transform:uppercase;
+            text-decoration:none;
+            -text-shadow:1px 1px 1px #000;
+            margin-right:30px;
+        }
+        span.reference a:hover
+        {
+            color:#ddd;
+        }
+        ul.sdt_menu
+        {
+            /**Alinear MenuHead**/
+            margin-top:0px;
+        }
+        h1.title
+        {
+            text-indent:-9000px;
+            background:transparent url(/Imagenes/MenuHead/title.png) no-repeat top left;
+            width:633px;
+            height:69px;
+        }
+#boton2
+{
+    background:-moz-linear-gradient(#8EBC00 0%,#8EBC00 100%);
+    background:-ms-linear-gradient(#8EBC00 0%,#8EBC00 100%);
+    background:-o-linear-gradient(#8EBC00 0%,#8EBC00 100%);
+    background:-webkit-linear-gradient(#8EBC00 0%,#8EBC00 100%);
+    background:linear-gradient(#8EBC00 0%,#8EBC00 100%);
+    border:solid 1px #DEDEDE;
+    border-radius:5px;
+    text-align:center;
+    padding:5px;
+    color:#fff;
+    width:140px;
+}
+#boton2:hover
+{
+    background:-moz-linear-gradient(#fff 0%,#DEDEDE 100%);
+    background:-ms-linear-gradient(#fff 0%,#DEDEDE 100%);
+    background:-o-linear-gradient(#fff 0%,#DEDEDE 100%);
+    background:-webkit-linear-gradient(#fff 0%,#DEDEDE 100%);
+    background:linear-gradient(#fff 0%,#DEDEDE 100%);
+    color:#999;
+}
+.btn
+{
+    background:-moz-linear-gradient(#8EBC00 0%,#8EBC00 100%);
+    background:-ms-linear-gradient(#8EBC00 0%,#8EBC00 100%);
+    background:-o-linear-gradient(#8EBC00 0%,#8EBC00 100%);
+    background:-webkit-linear-gradient(#8EBC00 0%,#8EBC00 100%);
+    background:linear-gradient(#8EBC00 0%,#8EBC00 100%);
+    border:solid 1px #DEDEDE;
+    border-radius:5px;
+    text-align:center;
+    padding:5px;
+    color:#fff;
+    width:140px;
+}
+.btn:hover
+{
+    background:-moz-linear-gradient(#fff 0%,#DEDEDE 100%);
+    background:-ms-linear-gradient(#fff 0%,#DEDEDE 100%);
+    background:-o-linear-gradient(#fff 0%,#DEDEDE 100%);
+    background:-webkit-linear-gradient(#fff 0%,#DEDEDE 100%);
+    background:linear-gradient(#fff 0%,#DEDEDE 100%);
+    color:#999;
+}
+.boton
+{
+    border-color:#8EBC00;
+    border-style:dotted;
+    font-family:Calibri;
+    font-size:large;
+    background-color:#8EBC00;
+    color:white;
+    width:151px;
+}
+.botonv
+{
+    border-color:#8EBC00;
+    border-style:dotted;
+    font-family:Calibri;
+    font-size:large;
+    background-color:#8EBC00;
+    color:white;
+    width:150px;
+}

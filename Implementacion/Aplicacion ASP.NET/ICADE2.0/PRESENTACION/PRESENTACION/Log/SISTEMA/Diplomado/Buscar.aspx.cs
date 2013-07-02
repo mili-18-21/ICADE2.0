@@ -1,0 +1,69 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Web;
+using System.Web.UI;
+using System.Web.UI.WebControls;
+using System.Windows.Forms;
+
+using ICADE2._0.Administracion.ENTIDADES;
+using ICADE2._0.Administracion.DAO;
+using ICADE2._0.Administracion.NEGOCIO;
+
+namespace PRESENTACION.PRESENTACION.Log.SISTEMA.Diplomado
+{
+    public partial class Buscar : System.Web.UI.Page
+    {
+        protected void Page_Load(object sender, EventArgs e)
+        {
+            clsDiplomadoGESTOR g = new clsDiplomadoGESTOR();
+            gvCustomres.DataSource = g.ListarPorDescripcion(TextBox1.Text);
+            DataBind();
+        }
+
+        protected void gvCustomres_PageIndexChanging(object sender, GridViewPageEventArgs e)
+        {
+            clsDiplomadoGESTOR g = new clsDiplomadoGESTOR();
+            gvCustomres.PageIndex = e.NewPageIndex;
+            gvCustomres.DataSource = g.ListarPorDescripcion(TextBox1.Text);
+            DataBind();
+        }
+
+        protected void gvCustomres_RowCommand(object sender, GridViewCommandEventArgs e)
+        {
+            if (e.CommandName == "Editar")
+            {
+                Int32 index = Convert.ToInt32(e.CommandArgument);
+                GridViewRow row = gvCustomres.Rows[index];
+                String i = Server.HtmlDecode(row.Cells[0].Text);
+
+                Response.Redirect("Editar.aspx?IdDiplomado=" + i);
+            }
+            if (e.CommandName == "Eliminar")
+            {
+                Int32 index = Convert.ToInt32(e.CommandArgument);
+                GridViewRow row = gvCustomres.Rows[index];
+                String i = Server.HtmlDecode(row.Cells[0].Text);
+
+                if (MessageBox.Show("Realmente deseas eliminar este diplomado?", "Confirmar eliminación", MessageBoxButtons.YesNo) == DialogResult.Yes)
+                {
+                    Int32 IdDiplomado = Convert.ToInt32(i);
+
+                    clsDiplomado obj = new clsDiplomado();
+                    clsDiplomadoGESTOR g = new clsDiplomadoGESTOR();
+                    if (g.EliminarDiplomado(IdDiplomado))
+                    {
+                        Response.Redirect("Buscar.aspx");
+                    }
+                }
+            }
+        }
+
+        protected void Button1_registrar_Click(object sender, EventArgs e)
+        {
+            clsDiplomadoGESTOR g = new clsDiplomadoGESTOR();
+            gvCustomres.DataSource = g.ListarPorDescripcion(TextBox1.Text);
+            DataBind();
+        }
+    }
+}

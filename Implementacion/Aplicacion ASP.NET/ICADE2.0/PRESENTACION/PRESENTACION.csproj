@@ -1,0 +1,496 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{84D68F5E-3027-48E0-9EED-00940021308B}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>PRESENTACION</RootNamespace>
+    <AssemblyName>PRESENTACION</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="css\General\General.css" />
+    <Content Include="css\GridView\GridView.css" />
+    <Content Include="css\KendoGrid\examples-offline.css" />
+    <Content Include="css\KendoGrid\kendo.common.min.css" />
+    <Content Include="css\KendoGrid\kendo.metro.min.css" />
+    <Content Include="css\KendoGrid\kendo.rtl.min.css" />
+    <Content Include="css\KendoGrid\Metro\editor.png" />
+    <Content Include="css\KendoGrid\Metro\imagebrowser.png" />
+    <Content Include="css\KendoGrid\Metro\loading-image.gif" />
+    <Content Include="css\KendoGrid\Metro\loading.gif" />
+    <Content Include="css\KendoGrid\Metro\slider-h.gif" />
+    <Content Include="css\KendoGrid\Metro\slider-v.gif" />
+    <Content Include="css\KendoGrid\Metro\sprite.png" />
+    <Content Include="css\KendoGrid\Metro\sprite_2x.png" />
+    <Content Include="css\MenuBody\MenuBody.css" />
+    <Content Include="css\MenuHead\MenuHead.css" />
+    <Content Include="Imagenes\Diplomado\Derecho1.jpg" />
+    <Content Include="Imagenes\Diplomado\derecho2.jpg" />
+    <Content Include="Imagenes\Diplomado\derecho3.jpg" />
+    <Content Include="Imagenes\Diplomado\derecho4.jpg" />
+    <Content Include="Imagenes\Diplomado\derecho5.jpg" />
+    <Content Include="Imagenes\Diplomado\derecho6.jpg" />
+    <Content Include="Imagenes\GridView\Edit.png" />
+    <Content Include="Imagenes\GridView\Eliminar.png" />
+    <Content Include="Imagenes\GridView\grd_alt.png" />
+    <Content Include="Imagenes\GridView\grd_head.png" />
+    <Content Include="Imagenes\GridView\grd_pgr.png" />
+    <Content Include="Imagenes\Login\Login1.png" />
+    <Content Include="Imagenes\Login\Login2.png" />
+    <Content Include="Imagenes\Login\msn.png" />
+    <Content Include="Imagenes\MenuHead\1.jpg" />
+    <Content Include="Imagenes\MenuHead\2.jpg" />
+    <Content Include="Imagenes\MenuHead\3.jpg" />
+    <Content Include="Imagenes\MenuHead\4.jpg" />
+    <Content Include="Imagenes\MenuHead\5.jpg" />
+    <Content Include="Imagenes\MenuHead\6.jpg" />
+    <Content Include="Imagenes\MenuHead\bg.png" />
+    <Content Include="Imagenes\MenuHead\overlay.png" />
+    <Content Include="Imagenes\MenuHead\title.png" />
+    <Content Include="Imagenes\Registrate\Registrate1.jpg" />
+    <Content Include="Imagenes\Registrate\Registrate2.jpg" />
+    <Content Include="Imagenes\Ver\icade.png" />
+    <Content Include="js\General\General.js" />
+    <Content Include="js\MenuBody\sliding_effect.js" />
+    <Content Include="js\MenuHead\jquery-1.4.2.min.js" />
+    <Content Include="js\MenuHead\jquery.easing.1.3.js" />
+    <Content Include="PRESENTACION\Log\SISTEMA\Administrador\Editar.aspx" />
+    <Content Include="PRESENTACION\Log\SISTEMA\Categoria\Buscar.aspx" />
+    <Content Include="PRESENTACION\Log\SISTEMA\Categoria\Editar.aspx" />
+    <Content Include="PRESENTACION\Log\SISTEMA\Categoria\Registrar.aspx" />
+    <Content Include="PRESENTACION\Log\SISTEMA\Diplomado\Buscar.aspx" />
+    <Content Include="PRESENTACION\Log\SISTEMA\Diplomado\Editar.aspx" />
+    <Content Include="PRESENTACION\Log\SISTEMA\Diplomado\Registrar.aspx" />
+    <Content Include="PRESENTACION\Log\SISTEMA\Matricula\Registrar2.aspx" />
+    <Content Include="PRESENTACION\Log\SISTEMA\Matricula\Ver.aspx" />
+    <Content Include="PRESENTACION\Log\SISTEMA\MisCursos\MisCursos.aspx" />
+    <Content Include="PRESENTACION\Log\SISTEMA\Participante\Editar.aspx" />
+    <Content Include="PRESENTACION\Log\SISTEMA\Participante\Eliminar.aspx" />
+    <Content Include="PRESENTACION\Log\SISTEMA\Profesion\Buscar.aspx" />
+    <Content Include="PRESENTACION\Log\SISTEMA\Profesion\Editar.aspx" />
+    <Content Include="PRESENTACION\Log\SISTEMA\Profesion\Registrar.aspx" />
+    <Content Include="PRESENTACION\Log\SISTEMA\Seminario\Buscar.aspx" />
+    <Content Include="PRESENTACION\Log\SISTEMA\Seminario\Editar.aspx" />
+    <Content Include="PRESENTACION\Log\SISTEMA\Seminario\Registrar.aspx" />
+    <Content Include="PRESENTACION\Log\SISTEMA\Tema\Buscar.aspx" />
+    <Content Include="PRESENTACION\Log\SISTEMA\Tema\Editar.aspx" />
+    <Content Include="PRESENTACION\Log\SISTEMA\Tema\Eliminar.aspx" />
+    <Content Include="PRESENTACION\Log\SISTEMA\Tema\Registrado.aspx" />
+    <Content Include="PRESENTACION\Log\SISTEMA\Tema\Registrar.aspx" />
+    <Content Include="PRESENTACION\NLog\SISTEMA\Administrador.aspx" />
+    <Content Include="PRESENTACION\NLog\SISTEMA\Login.aspx" />
+    <Content Include="PRESENTACION\NLog\SISTEMA\Registrate.aspx" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="PRESENTACION\Log\SISTEMA\Administrador\Editar.aspx.cs">
+      <DependentUpon>Editar.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PRESENTACION\Log\SISTEMA\Administrador\Editar.aspx.designer.cs">
+      <DependentUpon>Editar.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PRESENTACION\Log\SISTEMA\Categoria\Buscar.aspx.cs">
+      <DependentUpon>Buscar.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PRESENTACION\Log\SISTEMA\Categoria\Buscar.aspx.designer.cs">
+      <DependentUpon>Buscar.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PRESENTACION\Log\SISTEMA\Categoria\Editar.aspx.cs">
+      <DependentUpon>Editar.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PRESENTACION\Log\SISTEMA\Categoria\Editar.aspx.designer.cs">
+      <DependentUpon>Editar.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PRESENTACION\Log\SISTEMA\Categoria\Registrar.aspx.cs">
+      <DependentUpon>Registrar.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PRESENTACION\Log\SISTEMA\Categoria\Registrar.aspx.designer.cs">
+      <DependentUpon>Registrar.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PRESENTACION\Log\SISTEMA\Diplomado\Buscar.aspx.cs">
+      <DependentUpon>Buscar.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PRESENTACION\Log\SISTEMA\Diplomado\Buscar.aspx.designer.cs">
+      <DependentUpon>Buscar.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PRESENTACION\Log\SISTEMA\Diplomado\Editar.aspx.cs">
+      <DependentUpon>Editar.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PRESENTACION\Log\SISTEMA\Diplomado\Editar.aspx.designer.cs">
+      <DependentUpon>Editar.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PRESENTACION\Log\SISTEMA\Diplomado\Registrar.aspx.cs">
+      <DependentUpon>Registrar.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PRESENTACION\Log\SISTEMA\Diplomado\Registrar.aspx.designer.cs">
+      <DependentUpon>Registrar.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PRESENTACION\Log\SISTEMA\Matricula\Registrar2.aspx.cs">
+      <DependentUpon>Registrar2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PRESENTACION\Log\SISTEMA\Matricula\Registrar2.aspx.designer.cs">
+      <DependentUpon>Registrar2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PRESENTACION\Log\SISTEMA\Matricula\Ver.aspx.cs">
+      <DependentUpon>Ver.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PRESENTACION\Log\SISTEMA\Matricula\Ver.aspx.designer.cs">
+      <DependentUpon>Ver.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PRESENTACION\Log\SISTEMA\MisCursos\MisCursos.aspx.cs">
+      <DependentUpon>MisCursos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PRESENTACION\Log\SISTEMA\MisCursos\MisCursos.aspx.designer.cs">
+      <DependentUpon>MisCursos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PRESENTACION\Log\SISTEMA\Participante\Editar.aspx.cs">
+      <DependentUpon>Editar.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PRESENTACION\Log\SISTEMA\Participante\Editar.aspx.designer.cs">
+      <DependentUpon>Editar.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PRESENTACION\Log\SISTEMA\Participante\Eliminar.aspx.cs">
+      <DependentUpon>Eliminar.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PRESENTACION\Log\SISTEMA\Participante\Eliminar.aspx.designer.cs">
+      <DependentUpon>Eliminar.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PRESENTACION\Log\SISTEMA\Profesion\Buscar.aspx.cs">
+      <DependentUpon>Buscar.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PRESENTACION\Log\SISTEMA\Profesion\Buscar.aspx.designer.cs">
+      <DependentUpon>Buscar.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PRESENTACION\Log\SISTEMA\Profesion\Editar.aspx.cs">
+      <DependentUpon>Editar.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PRESENTACION\Log\SISTEMA\Profesion\Editar.aspx.designer.cs">
+      <DependentUpon>Editar.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PRESENTACION\Log\SISTEMA\Profesion\Registrar.aspx.cs">
+      <DependentUpon>Registrar.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PRESENTACION\Log\SISTEMA\Profesion\Registrar.aspx.designer.cs">
+      <DependentUpon>Registrar.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PRESENTACION\Log\SISTEMA\Seminario\Buscar.aspx.cs">
+      <DependentUpon>Buscar.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PRESENTACION\Log\SISTEMA\Seminario\Buscar.aspx.designer.cs">
+      <DependentUpon>Buscar.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PRESENTACION\Log\SISTEMA\Seminario\Editar.aspx.cs">
+      <DependentUpon>Editar.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PRESENTACION\Log\SISTEMA\Seminario\Editar.aspx.designer.cs">
+      <DependentUpon>Editar.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PRESENTACION\Log\SISTEMA\Seminario\Registrar.aspx.cs">
+      <DependentUpon>Registrar.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PRESENTACION\Log\SISTEMA\Seminario\Registrar.aspx.designer.cs">
+      <DependentUpon>Registrar.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PRESENTACION\Log\SISTEMA\Tema\Buscar.aspx.cs">
+      <DependentUpon>Buscar.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PRESENTACION\Log\SISTEMA\Tema\Buscar.aspx.designer.cs">
+      <DependentUpon>Buscar.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PRESENTACION\Log\SISTEMA\Tema\Editar.aspx.cs">
+      <DependentUpon>Editar.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PRESENTACION\Log\SISTEMA\Tema\Editar.aspx.designer.cs">
+      <DependentUpon>Editar.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PRESENTACION\Log\SISTEMA\Tema\Eliminar.aspx.cs">
+      <DependentUpon>Eliminar.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PRESENTACION\Log\SISTEMA\Tema\Eliminar.aspx.designer.cs">
+      <DependentUpon>Eliminar.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PRESENTACION\Log\SISTEMA\Tema\Registrado.aspx.cs">
+      <DependentUpon>Registrado.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PRESENTACION\Log\SISTEMA\Tema\Registrado.aspx.designer.cs">
+      <DependentUpon>Registrado.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PRESENTACION\Log\SISTEMA\Tema\Registrar.aspx.cs">
+      <DependentUpon>Registrar.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PRESENTACION\Log\SISTEMA\Tema\Registrar.aspx.designer.cs">
+      <DependentUpon>Registrar.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PRESENTACION\NLog\SISTEMA\Administrador.aspx.cs">
+      <DependentUpon>Administrador.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PRESENTACION\NLog\SISTEMA\Administrador.aspx.designer.cs">
+      <DependentUpon>Administrador.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PRESENTACION\NLog\SISTEMA\Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PRESENTACION\NLog\SISTEMA\Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PRESENTACION\NLog\SISTEMA\Registrate.aspx.cs">
+      <DependentUpon>Registrate.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PRESENTACION\NLog\SISTEMA\Registrate.aspx.designer.cs">
+      <DependentUpon>Registrate.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PRESENTACION\PaginasMaestras\Log\MenuBody\AdministradorGAD.master.cs">
+      <DependentUpon>AdministradorGAD.master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PRESENTACION\PaginasMaestras\Log\MenuBody\AdministradorGAD.master.designer.cs">
+      <DependentUpon>AdministradorGAD.master</DependentUpon>
+    </Compile>
+    <Compile Include="PRESENTACION\PaginasMaestras\Log\MenuBody\AdministradorGCA.master.cs">
+      <DependentUpon>AdministradorGCA.master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PRESENTACION\PaginasMaestras\Log\MenuBody\AdministradorGCA.master.designer.cs">
+      <DependentUpon>AdministradorGCA.master</DependentUpon>
+    </Compile>
+    <Compile Include="PRESENTACION\PaginasMaestras\Log\MenuBody\AdministradorGDI.master.cs">
+      <DependentUpon>AdministradorGDI.master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PRESENTACION\PaginasMaestras\Log\MenuBody\AdministradorGDI.master.designer.cs">
+      <DependentUpon>AdministradorGDI.master</DependentUpon>
+    </Compile>
+    <Compile Include="PRESENTACION\PaginasMaestras\Log\MenuBody\AdministradorGPR.master.cs">
+      <DependentUpon>AdministradorGPR.master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PRESENTACION\PaginasMaestras\Log\MenuBody\AdministradorGPR.master.designer.cs">
+      <DependentUpon>AdministradorGPR.master</DependentUpon>
+    </Compile>
+    <Compile Include="PRESENTACION\PaginasMaestras\Log\MenuBody\AdministradorGSE.master.cs">
+      <DependentUpon>AdministradorGSE.master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PRESENTACION\PaginasMaestras\Log\MenuBody\AdministradorGSE.master.designer.cs">
+      <DependentUpon>AdministradorGSE.master</DependentUpon>
+    </Compile>
+    <Compile Include="PRESENTACION\PaginasMaestras\Log\MenuBody\AdministradorGTE.master.cs">
+      <DependentUpon>AdministradorGTE.master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PRESENTACION\PaginasMaestras\Log\MenuBody\AdministradorGTE.master.designer.cs">
+      <DependentUpon>AdministradorGTE.master</DependentUpon>
+    </Compile>
+    <Compile Include="PRESENTACION\PaginasMaestras\Log\MenuBody\ParticipanteGCU.master.cs">
+      <DependentUpon>ParticipanteGCU.master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PRESENTACION\PaginasMaestras\Log\MenuBody\ParticipanteGCU.master.designer.cs">
+      <DependentUpon>ParticipanteGCU.master</DependentUpon>
+    </Compile>
+    <Compile Include="PRESENTACION\PaginasMaestras\Log\MenuBody\ParticipanteGPA.master.cs">
+      <DependentUpon>ParticipanteGPA.master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PRESENTACION\PaginasMaestras\Log\MenuBody\ParticipanteGPA.master.designer.cs">
+      <DependentUpon>ParticipanteGPA.master</DependentUpon>
+    </Compile>
+    <Compile Include="PRESENTACION\PaginasMaestras\Log\MenuBody\ParticipanteRMA.master.cs">
+      <DependentUpon>ParticipanteRMA.master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PRESENTACION\PaginasMaestras\Log\MenuBody\ParticipanteRMA.master.designer.cs">
+      <DependentUpon>ParticipanteRMA.master</DependentUpon>
+    </Compile>
+    <Compile Include="PRESENTACION\PaginasMaestras\Log\MenuHead\MenuHeadAD.Master.cs">
+      <DependentUpon>MenuHeadAD.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PRESENTACION\PaginasMaestras\Log\MenuHead\MenuHeadAD.Master.designer.cs">
+      <DependentUpon>MenuHeadAD.Master</DependentUpon>
+    </Compile>
+    <Compile Include="PRESENTACION\PaginasMaestras\Log\MenuHead\MenuHeadPA.Master.cs">
+      <DependentUpon>MenuHeadPA.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PRESENTACION\PaginasMaestras\Log\MenuHead\MenuHeadPA.Master.designer.cs">
+      <DependentUpon>MenuHeadPA.Master</DependentUpon>
+    </Compile>
+    <Compile Include="PRESENTACION\PaginasMaestras\NLog\MenuHead\MenuHead.Master.cs">
+      <DependentUpon>MenuHead.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PRESENTACION\PaginasMaestras\NLog\MenuHead\MenuHead.Master.designer.cs">
+      <DependentUpon>MenuHead.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="css\KendoGrid\Metro\Thumbs.db" />
+    <Content Include="Imagenes\Ver\Thumbs.db" />
+    <Content Include="PRESENTACION\PaginasMaestras\Log\MenuBody\AdministradorGAD.master" />
+    <Content Include="PRESENTACION\PaginasMaestras\Log\MenuBody\AdministradorGCA.master" />
+    <Content Include="PRESENTACION\PaginasMaestras\Log\MenuBody\AdministradorGDI.master" />
+    <Content Include="PRESENTACION\PaginasMaestras\Log\MenuBody\AdministradorGPR.master" />
+    <Content Include="PRESENTACION\PaginasMaestras\Log\MenuBody\AdministradorGSE.master" />
+    <Content Include="PRESENTACION\PaginasMaestras\Log\MenuBody\AdministradorGTE.master" />
+    <Content Include="PRESENTACION\PaginasMaestras\Log\MenuBody\ParticipanteGCU.master" />
+    <Content Include="PRESENTACION\PaginasMaestras\Log\MenuBody\ParticipanteGPA.master" />
+    <Content Include="PRESENTACION\PaginasMaestras\Log\MenuBody\ParticipanteRMA.master" />
+    <Content Include="PRESENTACION\PaginasMaestras\Log\MenuHead\MenuHeadAD.Master" />
+    <Content Include="PRESENTACION\PaginasMaestras\Log\MenuHead\MenuHeadPA.Master" />
+    <Content Include="PRESENTACION\PaginasMaestras\NLog\MenuHead\MenuHead.Master" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="PRESENTACION\Log\SISTEMA\EventoSeminario\" />
+    <Folder Include="PRESENTACION\Log\SISTEMA\Pago\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ICADE2.0.Administracion.DAO\ICADE2.0.Administracion.DAO.csproj">
+      <Project>{70697c27-b37c-426b-a664-e8da427ad3d4}</Project>
+      <Name>ICADE2.0.Administracion.DAO</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ICADE2.0.Administracion.ENTIDADES\ICADE2.0.Administracion.ENTIDADES.csproj">
+      <Project>{a28ba995-042d-4740-b63d-ca089e628e54}</Project>
+      <Name>ICADE2.0.Administracion.ENTIDADES</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ICADE2.0.Administracion.NEGOCIO\ICADE2.0.Administracion.NEGOCIO.csproj">
+      <Project>{207edcb7-1973-4d15-85dc-992e85e7c21d}</Project>
+      <Name>ICADE2.0.Administracion.NEGOCIO</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ICADE2.0.Matriculas.DAO\ICADE2.0.Matriculas.DAO.csproj">
+      <Project>{92fefc36-1ad4-42d5-bb08-853099b7373a}</Project>
+      <Name>ICADE2.0.Matriculas.DAO</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ICADE2.0.Matriculas.ENTIDADES\ICADE2.0.Matriculas.ENTIDADES.csproj">
+      <Project>{03cb9021-8c17-4347-85ca-62a485e71ec0}</Project>
+      <Name>ICADE2.0.Matriculas.ENTIDADES</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ICADE2.0.SeguridadyAutenticacion.DAO\ICADE2.0.SeguridadyAutenticacion.DAO.csproj">
+      <Project>{c29709bd-11f4-43d6-8e6e-d447f9a46932}</Project>
+      <Name>ICADE2.0.SeguridadyAutenticacion.DAO</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ICADE2.0.SeguridadyAutenticacion.ENTIDADES\ICADE2.0.SeguridadyAutenticacion.ENTIDADES.csproj">
+      <Project>{c389c9dd-f77c-4495-aebb-47e488b6fbed}</Project>
+      <Name>ICADE2.0.SeguridadyAutenticacion.ENTIDADES</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ICADE2.0.SeguridadyAutenticacion.NEGOCIO\ICADE2.0.SeguridadyAutenticacion.NEGOCIO.csproj">
+      <Project>{cd5a06df-97c0-4d54-81b8-41d21fe96485}</Project>
+      <Name>ICADE2.0.SeguridadyAutenticacion.NEGOCIO</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>0</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:2115/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

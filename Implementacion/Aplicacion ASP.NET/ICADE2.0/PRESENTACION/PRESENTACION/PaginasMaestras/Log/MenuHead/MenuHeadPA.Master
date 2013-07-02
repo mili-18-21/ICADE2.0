@@ -1,0 +1,126 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="MenuHeadPA.master.cs" Inherits="PRESENTACION.PRESENTACION.PaginasMaestras.Log.MenuHead.MenuHeadPA" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>ICADE VIRTUAL</title>
+    <link href="../../../../css/General/General.css" rel="stylesheet" />
+    <link href="../../../../css/MenuHead/MenuHead.css" rel="stylesheet" />
+    <link href="../../../../css/MenuBody/MenuBody.css" rel="stylesheet" />
+    <link href="../../../../css/BotonSlideOut/BotonSlideOut.css" rel="stylesheet" />
+    <link href="../../../../css/GridView/GridView.css" rel="stylesheet" />
+    <script src="../../../../js/MenuHead/jquery-1.4.2.min.js"></script>
+    <script src="../../../../js/MenuHead/jquery.easing.1.3.js"></script>
+    <script src="../../../../js/MenuBody/sliding_effect.js"></script>
+    <script src="../../../../js/General/General.js"></script>
+
+    <link href="../../../../css/KendoGrid/examples-offline.css" rel="stylesheet" />
+    <link href="../../../../css/KendoGrid/kendo.common.min.css" rel="stylesheet" />
+    <link href="../../../../css/KendoGrid/kendo.metro.min.css" rel="stylesheet" />
+    <link href="../../../../css/KendoGrid/kendo.rtl.min.css" rel="stylesheet" />
+
+</head>
+<body>
+    <form id="form1" runat="server">
+        <table border="0" style="width:100%; height: 74px">
+            <tr>
+                <td align="center">
+                    <table border="0" style=" width: 1020px; height: 50px">
+                        <tr>
+                            <td valign="center" style=" width: 70px">
+                                <img src="../../../../Imagenes/Login/msn.png" width="50px"/>
+                            </td>
+                            <td align="left" style=" text-align: left; font-size: large; color: #1d1d1d; font-family: 'Eras Demi ITC'">
+                                <asp:Label ID="Label4" runat="server" Text="Bienvenido(a)" style="color: #0066FF"></asp:Label>
+                                <br />
+                                <asp:Label ID="Label1" runat="server" Text="GINO RICHAR"></asp:Label>
+                                <asp:Label ID="Label2" runat="server" Text=","></asp:Label>
+                                <asp:Label ID="Label3" runat="server" Text="QUISPE RAMIRE"></asp:Label>
+                            </td>
+                        </tr>
+                    </table>   
+                </td>
+            </tr>
+        </table>
+        <table border="0" style=" width: 100%">
+            <tr>
+                <td align="center">
+                    <div class="content">
+		                <ul id="sdt_menu" class="sdt_menu">
+				            <li>
+					            <a href="#">
+						            <img src="/Imagenes/MenuHead/1.jpg" alt=""/>
+						            <span class="sdt_active"></span>
+						            <span class="sdt_wrap">
+							            <span class="sdt_link">Mi Cuenta</span>
+							            <span class="sdt_descr">Informacion de mi cuenta</span>
+						            </span>
+					            </a>
+                                <div class="sdt_box">
+						            <a href="../../../Log/SISTEMA/Participante/Editar.aspx">Editar mi cuenta</a>
+                                    <a href="../../../Log/SISTEMA/Participante/Eliminar.aspx">Cancelar mi cuenta</a>
+                                    <a href="../../../NLog/SISTEMA/Login.aspx">Cerrar sesion</a>
+					            </div>
+				            </li>
+				            <li>
+					            <a href="../../../Log/SISTEMA/Matricula/Registrar2.aspx">
+						            <img src="/Imagenes/MenuHead/2.jpg" alt=""/>
+						            <span class="sdt_active"></span>
+						            <span class="sdt_wrap">
+							            <span class="sdt_link">Matriculas</span>
+							            <span class="sdt_descr">Obten un diplomado</span>
+						            </span>
+					            </a>
+				            </li>
+				            <li>
+					            <a href="../../../Log/SISTEMA/MisCursos/MisCursos.aspx">
+						            <img src="/Imagenes/MenuHead/3.jpg" alt=""/>
+						            <span class="sdt_active"></span>
+						            <span class="sdt_wrap">
+							            <span class="sdt_link">Mis Cursos</span>
+							            <span class="sdt_descr">Disfruta del mejor material legislativo</span>
+						            </span>
+					            </a>
+				            </li>
+				            <li>
+					            <a href="#">
+						            <img src="/Imagenes/MenuHead/4.jpg" alt=""/>
+						            <span class="sdt_active"></span>
+						            <span class="sdt_wrap">
+							            <span class="sdt_link">Vacio</span>
+							            <span class="sdt_descr">Vacio</span>
+						            </span>
+					            </a>
+				            </li>
+				            <li>
+					            <a href="#">
+						            <img src="/Imagenes/MenuHead/5.jpg" alt=""/>
+						            <span class="sdt_active"></span>
+						            <span class="sdt_wrap">
+							            <span class="sdt_link">Vacio</span>
+							            <span class="sdt_descr">Vacio</span>
+						            </span>
+					            </a>
+				            </li>
+				            <li>
+					            <a href="#">
+						            <img src="/Imagenes/MenuHead/6.jpg" alt=""/>
+						            <span class="sdt_active"></span>
+						            <span class="sdt_wrap">
+							            <span class="sdt_link">Vacio</span>
+							            <span class="sdt_descr">Vacio</span>
+						            </span>
+					            </a>
+				            </li>
+			            </ul>
+                    </div>
+                </td>
+            </tr>
+        </table>
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        </asp:ContentPlaceHolder>
+    </form>
+</body>
+</html>

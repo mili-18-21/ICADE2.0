@@ -1,0 +1,28 @@
+﻿<%@ Master Language="C#" MasterPageFile="~/PRESENTACION/PaginasMaestras/Log/MenuHead/MenuHeadAD.Master" AutoEventWireup="true" CodeBehind="AdministradorGTE.master.cs" Inherits="PRESENTACION.PRESENTACION.PaginasMaestras.Log.MenuBody.AdministradorGTE" %>
+<asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
+
+    <table border="0">
+        <tr>
+            <td valign="top" style="width:200px">
+                <div id="navigation-block">
+                    <ul id="sliding-navigation">
+                        <li class="sliding-element"><h3>Gestionar tema</h3></li>
+                        <li class="sliding-element"><a href="../../../Log/SISTEMA/Tema/Registrar.aspx">Registrar tema</a></li>
+                        <li class="sliding-element"><a href="../../../Log/SISTEMA/Tema/Buscar.aspx">Buscar tema</a></li>
+                    </ul>
+                </div>
+            </td>
+            <td valign="top" style="width:1000px" class="contenido">
+                <table width="100%">
+                    <tr>
+                        <td>
+                            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                            </asp:ContentPlaceHolder>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+
+</asp:Content>
